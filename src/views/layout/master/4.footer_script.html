@@ -1,0 +1,154 @@
+<div id="footer_script">
+    {% load static %}
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+    <script src="js/app_code.js"></script>
+</div>
+
+<script id="page_script"></script>
+
+<script>
+    window.onload = function()
+    {
+        var base_url = "{% static '/' %}";
+        base_url = hostURL_static(base_url); 
+        headLink(base_url); 
+        footerScript(base_url); 
+        modifyActive(); 
+        userAction(); 
+        pageTopSectionImg(base_url); 
+        pageScript(base_url); 
+    }
+
+    function hostURL_static(static_url)
+    {
+        var a = document.createElement('a'); 
+        a.href = '/'; 
+        var host_url = a.href; 
+        host_url += static_url.slice(1);
+        return host_url; 
+    }
+
+    function headLink(base_url)
+    {
+        var head_link = document.getElementsByTagName('head')[0].querySelectorAll('link'); 
+        head_link.forEach
+        (
+            link=>
+            {
+                let href = link.getAttribute('href'); 
+                href = base_url + href; 
+                link.setAttribute('href',href); 
+            }
+        ); 
+    }
+
+    function footerScript(base_url)
+    {
+        var div = document.getElementById('footer_script'); 
+        var footer_script = div.querySelectorAll('script');
+        div.innerHTML = ""; 
+        footer_script.forEach
+        (
+            script=>
+            {
+                let src = script.getAttribute('src');
+                src = base_url + src;
+                var new_script = document.createElement('script'); 
+                new_script.src = src; 
+                div.appendChild(new_script); 
+            }
+        );
+    }
+
+    function modifyActive()
+    {
+        document.getElementsByTagName("header")[0].getElementsByClassName('main-menu')[0].getElementsByClassName('active')[0].classList.remove('active'); 
+
+        var supported_function = 
+        {
+            matchURL: function(url, a_li)
+            {
+                a_li.forEach
+                (
+                    a=>
+                    {
+                        var href = a.href; 
+                        if (href==url)
+                        {
+                            a.classList.add("active"); 
+                            return true; 
+                        }
+                    }
+                ); 
+                return false; 
+            }, 
+            
+            modifyURL: function(url)
+            {
+                var slash_index = url.lastIndexOf('/'); 
+                if (slash_index<0)
+                {
+                    return ""; 
+                }
+                else 
+                {
+                    return url.slice(0,slash_index); 
+                }
+            }
+
+        }
+
+        var a_li = document.getElementsByTagName("header")[0].getElementsByClassName('main-menu')[0].querySelectorAll('a');
+        var url = window.location.href; 
+        var match = supported_function.matchURL(url, a_li); 
+        while(url!="" && match==false)
+        {
+            url = supported_function.modifyURL(url); 
+            match = supported_function.matchURL(url, a_li); 
+        }
+
+    }
+
+    function userAction()
+    {
+        var username = 
+        `
+            {% if request.session.username %}
+                {{ request.session.username }}
+            {% endif %}
+        `; 
+        if (username.trim()!="")
+        {
+            var user_panel = document.getElementsByTagName("header")[0].getElementsByClassName('user-panel')[0]; 
+            user_panel.getElementsByClassName('register')[0].setAttribute('hidden','hidden'); 
+            var login_logout = user_panel.getElementsByClassName('login')[0]; 
+            login_logout.innerHTML = "Sign out"; 
+            href = hostURL_static('/user/logout'); 
+            login_logout.setAttribute('href', href); 
+        }
+    }
+
+    function pageTopSectionImg(base_url)
+    {
+        var page_top_section = document.getElementById('page_top_section'); 
+        var setbg = page_top_section.getAttribute('data-setbg'); 
+        var background_url = base_url+setbg; 
+        setbg = background_url; 
+        background_url = "url('" + background_url + "')"; 
+        page_top_section.setAttribute('data-setbg', setbg); 
+        page_top_section.style.backgroundImage = background_url; 
+    }
+
+    function pageScript(base_url)
+    {
+        var path = window.location.pathname; 
+        var js_path = 'js/views'; 
+        var src = base_url+js_path+path+'.js'; 
+        document.getElementById('page_script').setAttribute('src',src); 
+    }
+
+</script>

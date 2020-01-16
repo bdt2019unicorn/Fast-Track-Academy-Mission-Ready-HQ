@@ -1,0 +1,60 @@
+{% extends 'layout/master.html' %}
+
+{% block content %}
+
+<section class="contact-section">
+    <div id="register">
+        <h3 class="text-center text-white pt-5">Register form</h3>
+        <div class="container">
+            <div id="register-row" class="row justify-content-center align-items-center">
+                <div id="register-column" class="col-md-6">
+                    <div id="register-box" class="col-md-12">
+                        <form id="register-form" class="form" action="" method="post">
+                            {% csrf_token %}
+                            <h3 class="text-center text-info">Register</h3>
+                            <div class="form-group">
+                                <label for="name" class="text-info">Name:</label><br>
+                                <input type="text" name="name" id="name" class="form-control" oninput="valueRequired(this, 'name_required')">
+                                <p id="name_required" class="error_alert_p">Please enter your name</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="text-info">Email:</label><br>
+                                <input type="text" name="email" id="email" class="form-control" oninput="checkEmailValid(this,'email_required', 'email_valid')" data-url="/user/check_user_existed" onchange="checkValueExisted(this,'email_registered','false')">
+                                <p id="email_required" class="error_alert_p">Please enter your email</p>
+                                <p id="email_valid" class="error_alert_p">Please enter a valid email</p>
+                                <p id="email_registered" hidden class="error_alert_p">This email is already registered</p>
+                            </div>                            
+                            <div class="form-group">
+                                <label for="username" class="text-info">Username:</label><br>
+                                <input type="text" name="username" id="username" class="form-control" oninput="valueRequired(this, 'username_required')" data-url="/user/check_user_existed" onchange="checkValueExisted(this,'username_registered','false')">
+                                <p id="username_required" class="error_alert_p">Please enter user name</p>
+                                <p id="username_registered" hidden class="error_alert_p">This user is already registered</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="password" name="password" id="password" class="form-control" oninput="valueRequired(this, 'password_required')">
+                                <p id="password_required" class="error_alert_p">Please enter the password</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm_password" class="text-info">Confirm Passord:</label><br>
+                                <input type="password" name="confirm_password" id="confirm_password" class="form-control" oninput="checkConfirmPassword(this, 'password','confirm_password_required','password_matched')">
+                                <p id="confirm_password_required" class="error_alert_p">Please confirm your password</p>
+                                <p id="password_matched" hidden class="error_alert_p">The password confirmation is not matched</p>
+                            </div>
+                            <div class="form-group">
+                                <input type="button" onclick="registerUser(this)" name="submit" class="btn btn-info btn-md" value="Register" data-url="/user/register_user" data-form_id="register-form" data-redirect="/user">
+                                <button type="button" onclick="putRandomInformationTest()">user test auto</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+{% endblock %}

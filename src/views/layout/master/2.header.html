@@ -1,0 +1,23 @@
+<header class="header-section">
+    <a href="index.html" class="site-logo">
+        {% load static %}
+        <img src="{% static 'img/logo.png' %}" alt="logo">
+    </a>
+    <nav class="header-nav">
+        <ul class="main-menu">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="header-right">
+            <div class="user-panel">
+                <a href="/user/login" class="login">Sign in</a>
+                <a href="/user/register" class="register">Join us</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section id="page_top_section" class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg" style="background-image: url('img/page-top-bg.jpg');">
+</section>

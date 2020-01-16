@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'layout/master/1.head.html' %}
+    <body>
+        {% include 'layout/master/2.header.html'%}
+
+        {% block content %}
+        {% endblock %}
+
+        {% include 'layout/master/3.footer.html' %}
+        {% include 'layout/master/4.footer_script.html' %}
+    </body>
+</html>

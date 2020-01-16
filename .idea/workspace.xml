@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9e3c0381-345a-4cc1-9fb4-6b8bbed52c50" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VaGkPemTAXCVKBktDCNYsGd50e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Hoang Thanh Binh\Desktop\FastTrackAcademyGUI\src\views\user\login_required" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hoang Thanh Binh\Desktop\FastTrackAcademyGUI\src\views\user\no_login_required" />
+      <recent name="C:\Users\Hoang Thanh Binh\Desktop\FastTrackAcademyGUI\src\views\user" />
+      <recent name="C:\Users\Hoang Thanh Binh\Desktop\FastTrackAcademyGUI\src\views" />
+      <recent name="C:\Users\Hoang Thanh Binh\Desktop\FastTrackAcademyGUI\src\src\controller" />
+      <recent name="C:\Users\Hoang Thanh Binh\Desktop\FastTrackAcademyGUI\src\src\routes" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FastTrackAcademyGUI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/src/helper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/src/helper/database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.database" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e3c0381-345a-4cc1-9fb4-6b8bbed52c50" name="Default Changelist" comment="" />
+      <created>1577483934951</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577483934951</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="437" y="12" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577486641223">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="437" y="12" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1577486641223" />
+    <state x="888" y="115" key="FileChooserDialogImpl" timestamp="1577950893907">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="888" y="115" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577950893907" />
+    <state width="1345" height="223" key="GridCell.Tab.0.bottom" timestamp="1577867114608">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1577867114608" />
+    <state width="1345" height="223" key="GridCell.Tab.0.center" timestamp="1577867114608">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1577867114608" />
+    <state width="1345" height="223" key="GridCell.Tab.0.left" timestamp="1577867114608">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1577867114608" />
+    <state width="1345" height="223" key="GridCell.Tab.0.right" timestamp="1577867114608">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1577867114608" />
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1577867114608">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1577867114608" />
+    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1577867114608">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1577867114608" />
+    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1577867114608">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1577867114608" />
+    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1577867114608">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1577867114608" />
+    <state x="186" y="10" key="SettingsEditor" timestamp="1578257394471">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578257394471" />
+  </component>
+</project>
